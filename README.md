@@ -2,6 +2,8 @@
 
 A small web application to handle managing a collection of albums. Allows for easy ability to view albums, edit an album's fields, and more. 
 
+![Demo Gif](demo.gif)
+
 ## Dependencies
 * [NPM](https://www.npmjs.com/)
 
