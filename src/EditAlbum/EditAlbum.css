@@ -1,0 +1,42 @@
+.edit-album-pane {
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(240, 240, 240);
+    overflow-x: hidden;
+    transition: all 0.5s ease 0s;
+    padding-top: 60px;
+}
+
+.expanded {
+    width: 500px;
+}
+
+.minimized {
+    width: 0px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    border: none;
+    background: none;
+    color: grey;
+}
+
+.close-btn:hover {
+    cursor: pointer;
+}
+
+.album-label {
+    display: block;
+}
+
+.input-grouping {
+    margin: 0px 0px 20px 0px;
+}

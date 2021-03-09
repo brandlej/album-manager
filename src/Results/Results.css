@@ -1,0 +1,45 @@
+.album {
+    border: 1px solid black;
+    height: 220px;
+    width: 200px;
+    margin: 25px;
+    border-radius: 5px;
+}
+
+.page-number:hover {
+    cursor: pointer
+}
+
+.page-number {
+    font-weight: 600;
+}
+
+.album:hover {
+    cursor: pointer;
+}
+
+#album-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.red {
+    background-color: lightcoral;
+}
+
+.blue {
+    background-color: lightblue;
+}
+
+.yellow {
+    background-color: lightyellow;
+}
+
+.green {
+    background-image: url("https://previews.123rf.com/images/oksancia/oksancia1506/oksancia150600002/40908132-vector-mint-green-floral-texture-seamless-pattern.jpg")
+}
+
+.gold {
+    background-image: url("https://www.coinworld.com/images/default-source/news/unique-1792-gold-10-dollar-pattern-ngc-lead.tmb-slide-1900.jpg?sfvrsn=19553d7f_2");
+}
