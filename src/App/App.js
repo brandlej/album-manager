@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState, useEffect } from 'react';
 import Search from './../Search/Search';
 import Results from './../Results/Results';
 import EditAlbum from './../EditAlbum/EditAlbum';
@@ -22,14 +22,14 @@ const options = {
 };
 
 function App() {
-  // setup react state hooks
-  const [albums, setAlbums] = useState([]);
+  // setup hooks
+  const [albums, setAlbums] = useState([])
   const [currentAlbums, setCurrentAlbums] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [currentlySelectedAlbum, setCurrentlySelectedAlbum] = useState(null);
   const [isInActiveSearch, setIsInActiveSearch] = useState(false);
 
-  function handleChange(e) {
+  function handleSearch(e) {
     setIsInActiveSearch(true);
     e.preventDefault();
     const fuse = new Fuse(albums, options);
@@ -119,7 +119,7 @@ function App() {
     <div className="app">
       <h1>Greg's Album Manager</h1>
       <EditAlbum album={currentlySelectedAlbum} updateAlbum={updateAlbum}/>
-      <Search handleChange={handleChange} handleReset={handleReset}/>
+      <Search handleSearch={handleSearch} handleReset={handleReset}/>
       <Results isInActiveSearch={isInActiveSearch} pageNumbers={pageNumbers} handlePageClick={handlePageClick} albums={currentAlbums} currentPage={currentPage} handleAlbumClick={handleAlbumClick}/>
     </div>
   );

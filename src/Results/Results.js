@@ -34,7 +34,7 @@ function Results (props) {
                     <NoResults />
                 }
             </div>
-            {/* TODO - if in active search, remove pagination */}
+            {/* If in active search, remove pagination */}
             { props.isInActiveSearch ? null : 
                 (
                     renderPageNumbers

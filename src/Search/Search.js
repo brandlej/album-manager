@@ -1,12 +1,12 @@
 import './Search.css';
 
 function Search (props) {
-    const { handleChange, handleReset } = props;
+    const { handleSearch, handleReset } = props;
     return (
         <div>
             <h3>Search for an album:</h3>
-            <input id="search-input" type="text" onChange={handleChange}></input>
-            <button onClick={handleReset}>Reset</button>
+            <input id="search-input" type="text" onChange={handleSearch}></input>
+            <button id="search-button" onClick={handleReset}>Reset</button>
         </div>
     )
 }

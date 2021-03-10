@@ -26,6 +26,7 @@ Run the following to run test suites
 ```
 npm test
 ```
+Then press `a` to run all tests.
 
 ## Development
 Local express server is run on port 5000. Changes are automatically watched and built using nodemon. Client code is served on port 3000 with changes also reloading on save.

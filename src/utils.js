@@ -23,5 +23,5 @@ export function getAlbumColor (condition) {
         'very_good': 'green',
         'mint': 'gold'
     }
-    return colorMap[condition];
+    return colorMap[condition] || '';
 }
